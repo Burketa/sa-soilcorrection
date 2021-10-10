@@ -1,12 +1,12 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.enums.NomeNutrienteAdicional;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 @RequiredArgsConstructor
 public class NutrienteAdicional {
-
     private final NomeNutrienteAdicional nome;
 
     @Getter
@@ -14,5 +14,4 @@ public class NutrienteAdicional {
 
     @Getter @Setter
     private double correcaoAdicional;
-    
 }

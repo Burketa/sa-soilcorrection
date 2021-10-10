@@ -1,9 +1,9 @@
-package edu.utfpr.cp.dacom.sa.soilcorrection;
+package edu.utfpr.cp.dacom.sa.soilcorrection.converters;
 
+import edu.utfpr.cp.dacom.sa.soilcorrection.interfaces.Conversao;
 import lombok.NonNull;
 
 public class ConverteMgDm3EmKgHa implements Conversao<Double, Double> {
-
     @Override
     public Double converte(@NonNull Double valor) {
 

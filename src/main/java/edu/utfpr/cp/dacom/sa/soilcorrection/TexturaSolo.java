@@ -1,7 +1,6 @@
 package edu.utfpr.cp.dacom.sa.soilcorrection;
 
 public enum TexturaSolo {
-    
     ARGILOSO {
         public NutrientesCTC calculaValorIdeal() {
             return NutrientesCTC
@@ -16,14 +15,15 @@ public enum TexturaSolo {
                     .build();
         }
     },
-    TEXTURA_MEDIA{
+
+    TEXTURA_MEDIA {
         public NutrientesCTC calculaValorIdeal() {
             return NutrientesCTC
                     .builder()
                     .fosforo(12.0)
                     .potassio(0.25)
                     .calcio(3.0)
-                    .magnesio( 1.0)
+                    .magnesio(1.0)
                     .enxofre(6.0)
                     .aluminio(0.0)
                     .aluminioHidrogenio(0.0)
@@ -31,6 +31,6 @@ public enum TexturaSolo {
 
         }
     };
-    
+
     public abstract NutrientesCTC calculaValorIdeal();
 }
